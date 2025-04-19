@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Depo Yönetimi</title>
+    <link rel="stylesheet" href="depo_ui.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button id="close-btn" class="close-btn">×</button>
+            <h1>Depo Yönetimi</h1>
+        </div>
+        
+        <div class="tabs">
+            <button class="tab-btn active" data-target="tab1">Depo 1</button>
+            <button class="tab-btn" data-target="tab2">Depo 2</button>
+            <button class="tab-btn" data-target="tab3">Depo 3</button>
+        </div>
+        
+        <div class="content">
+            <div id="tab1" class="tab-content">
+                <div class="storage-grid">
+                    <div class="storage-item" data-id="1">
+                        <h3>Raf A1</h3>
+                        <p>Kapasite: 100/150</p>
+                    </div>
+                    <div class="storage-item" data-id="2">
+                        <h3>Raf A2</h3>
+                        <p>Kapasite: 75/150</p>
+                    </div>
+                    <!-- Diğer raflar buraya eklenecek -->
+                </div>
+            </div>
+            
+            <div id="tab2" class="tab-content hidden">
+                <div class="storage-grid">
+                    <div class="storage-item" data-id="3">
+                        <h3>Raf B1</h3>
+                        <p>Kapasite: 120/150</p>
+                    </div>
+                    <div class="storage-item" data-id="4">
+                        <h3>Raf B2</h3>
+                        <p>Kapasite: 90/150</p>
+                    </div>
+                    <!-- Diğer raflar buraya eklenecek -->
+                </div>
+            </div>
+            
+            <div id="tab3" class="tab-content hidden">
+                <div class="storage-grid">
+                    <div class="storage-item" data-id="5">
+                        <h3>Raf C1</h3>
+                        <p>Kapasite: 50/150</p>
+                    </div>
+                    <div class="storage-item" data-id="6">
+                        <h3>Raf C2</h3>
+                        <p>Kapasite: 100/150</p>
+                    </div>
+                    <!-- Diğer raflar buraya eklenecek -->
+                </div>
+            </div>
+            
+            <div id="storage-info" class="hidden">
+                <button id="back-btn" class="back-btn">← Geri</button>
+                <h2>Raf Detayları</h2>
+                <div class="storage-details">
+                    <!-- Raf detayları buraya dinamik olarak eklenecek -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="depo_ui.js"></script>
+</body>
+</html> 

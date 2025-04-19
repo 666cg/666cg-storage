@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#storage-prompt {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+#storage-prompt.hidden {
+    opacity: 0;
+    right: -200px;
+    pointer-events: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    padding: 10px 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.key-container {
+    margin-right: 15px;
+}
+
+.key {
+    width: 35px;
+    height: 35px;
+    background: #ffcc00;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(255, 204, 0, 0.3);
+}
+
+.text-container {
+    margin-right: 15px;
+}
+
+.storage-name {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.icon-container {
+    margin-left: auto;
+    color: #ffcc00;
+    font-size: 20px;
+} 
